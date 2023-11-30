@@ -1,10 +1,14 @@
+%flexItemsCenter {
+    display: flex;
+    align-items: center;
+}
+
 .header {
     background: #eee;
 }
 
 .top-bar {
-    display: flex;
-    align-items: center;
+    @extend %flexItemsCenter;
     padding: 30px 0;
 }
 
@@ -13,8 +17,7 @@
     margin-right: auto;
 
     &__list {
-        display: flex;
-        align-items: center;
+        @extend %flexItemsCenter;
         gap: 30px;
     }
 
@@ -28,13 +31,10 @@
 }
 
 .top-act {
-    display: flex;
-    align-items: center;
+    @extend %flexItemsCenter;
     gap: 20px;
-
     &__group {
-        display: flex;
-        align-items: center;
+        @extend %flexItemsCenter;
 
         min-width: 50px;
         height: 50px;
@@ -49,10 +49,10 @@
     }
 
     &__btn {
-        display: flex;
-        align-items: center;
+        @extend %flexItemsCenter;
         gap: 10px;
         padding: 13px 20px;
+        cursor: pointer;
     }
 
     &__title {
@@ -72,5 +72,6 @@
         width: 50px;
         height: 50px;
         border-radius: 8px;
+        cursor: pointer;
     }
 }
