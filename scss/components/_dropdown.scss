@@ -95,12 +95,13 @@
     }
 
     &__item {
-        &:hover .sub-menu {
+        &--active .sub-menu {
             display: grid;
         }
     }
 
-    &__item:hover > &__link {
+    &__item:hover > &__link,
+    &__item--active > &__link {
         color: #0071dc;
         font-weight: 500;
     }
