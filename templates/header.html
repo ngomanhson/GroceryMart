@@ -1,7 +1,7 @@
 <div class="container">
     <div class="top-bar">
         <!-- Start More -->
-        <button class="top-bar__more">
+        <button class="top-bar__more js-toggle" toggle-target="#navbar">
             <img src="./assets/icons/more.svg" alt="" class="icon top-bar__more-icon" />
         </button>
         <!-- End More -->
@@ -14,10 +14,14 @@
         <!-- End Logo -->
 
         <!-- Start Navbar -->
-        <nav class="navbar">
+        <nav id="navbar" class="navbar hide">
+            <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
+                <img src="./assets/icons/arrow-left.svg" alt="" />
+            </button>
+
             <ul class="navbar__list js-dropdown-list">
                 <li class="navbar__item">
-                    <a href="" class="navbar__link"
+                    <a href="#!" class="navbar__link"
                         >Departments
                         <img src="./assets/icons/arrow-down.svg" alt="" class="icon navbar__arrow" />
                     </a>
@@ -3027,6 +3031,10 @@
             </ul>
         </nav>
         <!-- End Navbar -->
+
+        <!-- Start Navbar overlay -->
+        <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
+        <!-- End Navbar overlay -->
 
         <!-- Start Actions -->
         <div class="top-act">

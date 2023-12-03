@@ -26,12 +26,15 @@ button {
     background: transparent;
 }
 
+a,
+img,
 button,
 input,
 select,
 textarea {
     font-family: inherit;
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .icon {
