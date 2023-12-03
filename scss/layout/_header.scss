@@ -103,14 +103,16 @@
 
     &__item {
         &:hover .dropdown {
-            display: block;
+            visibility: visible;
+            opacity: 1;
         }
 
         @include abstracts.breakpoint(lg) {
             width: 100%;
 
             &:hover .dropdown {
-                display: none;
+                visibility: hidden;
+                opacity: 0;
             }
         }
     }

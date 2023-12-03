@@ -1342,14 +1342,16 @@ html.dark {
   }
 }
 .navbar__item:hover .dropdown {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 @media (max-width: 991.98px) {
   .navbar__item {
     width: 100%;
   }
   .navbar__item:hover .dropdown {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 .navbar__link {
@@ -1459,7 +1461,9 @@ html.dark {
   left: 0;
   width: min(1240px, 100%);
   padding-top: 54px;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s linear;
 }
 .dropdown__inner {
   --inner-padding: 30px;

@@ -6,7 +6,11 @@
 
     width: min(1240px, 100%);
     padding-top: 54px;
-    display: none;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.4s linear;
 
     &__inner {
         --inner-padding: 30px;
