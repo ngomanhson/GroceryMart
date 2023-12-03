@@ -1304,6 +1304,8 @@ html {
   --dropdown-bg-color: #fff;
   --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
   --top-menu-border-color: #d2d1d6;
+  --sidebar-bg: #fff;
+  --sidebar-shadow: rgba(200, 200, 200, 0.4);
 }
 @media (max-width: 991.98px) {
   html {
@@ -1325,6 +1327,8 @@ html.dark {
   --dropdown-arrow-color: brightness(0) saturate(100%) invert(15%) sepia(18%) saturate(800%) hue-rotate(185deg) brightness(95%) contrast(85%);
   --top-menu-border-color: #171c28;
   --menu-column-icon-color: brightness(0) saturate(100%) invert(100%) sepia(20%) saturate(441%) hue-rotate(235deg) brightness(101%) contrast(96%);
+  --sidebar-bg: #292e39;
+  --sidebar-shadow: rgba(23, 28, 40, 0.4);
 }
 @media (max-width: 991.98px) {
   html.dark {
@@ -1377,16 +1381,23 @@ html.dark {
     z-index: 9;
     margin-left: 0;
     padding: 20px 0;
-    background: #fff;
+    background: var(--sidebar-bg);
+    border-radius: 0px 20px 20px 0px;
     translate: -100%;
     transition: translate 0.5s ease-in;
   }
   .navbar.show {
     translate: 0;
+    box-shadow: 0px 40px 90px 20px var(--sidebar-shadow);
   }
   .navbar.show ~ .navbar__overlay {
     visibility: visible;
     opacity: 1;
+  }
+}
+@media (max-width: 575.98px) {
+  .navbar {
+    inset: 0 20% 0 0;
   }
 }
 .navbar__close-btn {
@@ -1396,6 +1407,11 @@ html.dark {
   .navbar__close-btn {
     display: block;
     padding: 10px 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .navbar__close-btn {
+    padding: 0 20px 10px;
   }
 }
 .navbar__overlay {
@@ -1418,7 +1434,17 @@ html.dark {
     flex-direction: column;
     align-items: flex-start;
     overflow-y: auto;
-    height: calc(100% - 26px);
+    height: calc(100% - 40px);
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar__list {
+    height: calc(100% - 142px);
+  }
+}
+@media (max-width: 575.98px) {
+  .navbar__list {
+    height: calc(100% - 124px);
   }
 }
 .navbar__item:hover .dropdown {
@@ -1449,6 +1475,12 @@ html.dark {
     padding: 0 40px;
     font-size: 1.6rem;
     line-height: 150%;
+  }
+}
+@media (max-width: 575.98px) {
+  .navbar__link {
+    height: 44px;
+    padding: 0 20px;
   }
 }
 .navbar__arrow {
@@ -1509,6 +1541,27 @@ html.dark {
   height: 50px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.nav-btn {
+  height: 50px;
+  padding: 0 40px;
+  align-items: center;
+}
+@media (max-width: 575.98px) {
+  .nav-btn {
+    height: 44px;
+    padding: 10px 20px;
+  }
+}
+.nav-btn__title, .nav-btn__qty {
+  margin-left: 16px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 146.667%;
+}
+.nav-btn__qty {
+  margin-left: auto;
 }
 
 .logo {
