@@ -6,18 +6,11 @@
 
     width: min(1240px, 100%);
     padding-top: 54px;
-
-    visibility: hidden;
-    opacity: 0;
-
-    transition: all 0.4s linear;
+    display: none;
 
     @include abstracts.breakpoint(lg) {
         position: initial;
         padding-top: 0;
-
-        visibility: visible;
-        opacity: 1;
     }
 
     &__inner {

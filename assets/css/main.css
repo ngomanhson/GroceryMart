@@ -1422,12 +1422,17 @@ html.dark {
   }
 }
 .navbar__item:hover .dropdown {
-  visibility: visible;
-  opacity: 1;
+  display: block;
 }
 @media (max-width: 991.98px) {
   .navbar__item {
     width: 100%;
+  }
+  .navbar__item:hover .dropdown {
+    display: none;
+  }
+  .navbar__item--active .dropdown {
+    display: block !important;
   }
 }
 .navbar__link {
@@ -1445,6 +1450,18 @@ html.dark {
     font-size: 1.6rem;
     line-height: 150%;
   }
+}
+.navbar__arrow {
+  margin-top: 3px;
+}
+@media (max-width: 991.98px) {
+  .navbar__arrow {
+    rotate: -90deg;
+    transition: rotate 0.3s;
+  }
+}
+.navbar__item--active .navbar__arrow {
+  rotate: 0deg;
 }
 
 .top-act {
@@ -1532,16 +1549,12 @@ html.dark {
   left: 0;
   width: min(1240px, 100%);
   padding-top: 54px;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.4s linear;
+  display: none;
 }
 @media (max-width: 991.98px) {
   .dropdown {
     position: initial;
     padding-top: 0;
-    visibility: visible;
-    opacity: 1;
   }
 }
 .dropdown__inner {
