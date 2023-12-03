@@ -90,6 +90,9 @@
         @include abstracts.breakpoint(lg) {
             flex-direction: column;
             align-items: flex-start;
+
+            overflow-y: auto;
+            height: calc(100% - 26px);
         }
     }
 
@@ -101,11 +104,6 @@
 
         @include abstracts.breakpoint(lg) {
             width: 100%;
-
-            &:hover .dropdown {
-                visibility: hidden;
-                opacity: 0;
-            }
         }
     }
 
