@@ -5,7 +5,7 @@
 
 .filter {
     position: absolute;
-    top: 50px;
+    top: 55px;
     right: 0;
 
     padding: 30px;
@@ -13,6 +13,13 @@
 
     background: var(--filter-form-bg);
     filter: drop-shadow(0px 40px 90px var(--filter-form-shadow));
+
+    &__arrow {
+        position: absolute;
+        top: -15px;
+        right: 27px;
+        height: 20px;
+    }
 
     &__heading {
         font-size: 2.2rem;
@@ -179,5 +186,25 @@
         width: 1px;
         background: #eee;
         margin: 0 30px;
+    }
+
+    &__footer {
+        margin-top: 32px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__cancel,
+    &__submit {
+        height: 38px;
+        padding: 0 10px;
+    }
+
+    &__cancel {
+        font-size: 1.5rem;
+    }
+
+    &__submit {
+        font-size: 1.4rem;
     }
 }
