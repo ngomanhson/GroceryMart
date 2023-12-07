@@ -6,7 +6,7 @@
 }
 
 .header {
-    background: var(--header-gb-color);
+    background: var(--header-bg-color);
 
     @include abstracts.screen(lg) {
         box-shadow: 0px 20px 60px 10px var(--header-shadow-color);

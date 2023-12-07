@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,7 +31,8 @@
         </script>
         <!-- End Header -->
 
-        <div class="container home">
+        <!-- Start Main -->
+        <main class="container home">
             <div class="home__container">
                 <!-- Start Slideshow -->
                 <div class="slideshow">
@@ -332,13 +333,14 @@
                 </div>
             </section>
             <!-- End Browse Products -->
+        </main>
+        <!-- End Main -->
 
-            <!-- Start Footer -->
-            <footer id="footer"></footer>
-            <script>
-                load("#footer", "./templates/footer.html");
-            </script>
-            <!-- End Footer -->
-        </div>
+        <!-- Start Footer -->
+        <footer class="footer" id="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+        <!-- End Footer -->
     </body>
 </html>
