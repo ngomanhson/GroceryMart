@@ -28,13 +28,24 @@
         <main class="auth">
             <!-- Start Auth intro -->
             <div class="auth__intro">
+                <!-- Start Logo -->
+                <a href="./" class="logo auth__intro-logo d-none d-md-flex">
+                    <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img" />
+                    <h1 class="logo__title">grocerymart</h1>
+                </a>
+                <!-- End Logo -->
+
                 <img src="./assets/images/auth/intro.svg" alt="" class="auth__intro-img" />
                 <p class="auth__intro-text">The best of luxury brand values, high quality products, and innovative services</p>
+
+                <button class="auth__intro-next d-none d-md-flex js-toggle" toggle-target="#auth-content">
+                    <img src="./assets/images/auth/intro-arrow.svg" alt="" />
+                </button>
             </div>
             <!-- End Auth intro -->
 
             <!-- Start Auth content -->
-            <div class="auth__content">
+            <div class="auth__content hide" id="auth-content">
                 <div class="auth__content-inner">
                     <!-- Start Logo -->
                     <a href="./" class="logo">
@@ -46,7 +57,7 @@
                     <h1 class="auth__heading">Sign Up</h1>
                     <p class="auth__desc">Let’s create your account and Shop like a pro and save money.</p>
 
-                    <form action="#!" class="form auth__form">
+                    <form action="./index-logined.html" class="form auth__form">
                         <div class="form__group">
                             <div class="form__text-input">
                                 <input type="email" name="" id="" placeholder="Email" class="form__input" />
@@ -92,5 +103,9 @@
             <!-- End Auth content -->
         </main>
         <!-- End Main -->
+
+        <script>
+            window.dispatchEvent(new Event("template-loaded"));
+        </script>
     </body>
 </html>
