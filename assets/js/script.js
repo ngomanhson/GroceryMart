@@ -190,3 +190,32 @@ window.addEventListener("template-loaded", () => {
         };
     });
 });
+
+// Preview images product
+document.addEventListener("DOMContentLoaded", function () {
+    const thumbnailImages = $$(".prod-preview__thumb-img");
+    const largeImage = $(".prod-preview__img");
+    const previewList = $(".prod-preview__list");
+
+    // Function to slide the large image
+    function slideLargeImage(index) {
+        const offset = -index * 100;
+        previewList.style.transform = `translateX(${offset}%)`;
+    }
+
+    thumbnailImages.forEach((thumb, index) => {
+        thumb.addEventListener("click", function () {
+            // Update the source of the large image with the clicked thumbnail's source
+            largeImage.src = thumb.src;
+
+            // Remove the "prod-preview__thumb-img--current" class from all thumbnails
+            thumbnailImages.forEach((t) => t.classList.remove("prod-preview__thumb-img--current"));
+
+            // Add the "prod-preview__thumb-img--current" class to the clicked thumbnail
+            thumb.classList.add("prod-preview__thumb-img--current");
+
+            // Slide the large image
+            slideLargeImage(index);
+        });
+    });
+});

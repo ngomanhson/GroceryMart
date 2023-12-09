@@ -2927,10 +2927,11 @@ html.dark {
 
 .prod-preview {
   padding: 0 30px;
+  overflow: hidden;
 }
 .prod-preview__list {
   display: flex;
-  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
 .prod-preview__item {
   position: relative;

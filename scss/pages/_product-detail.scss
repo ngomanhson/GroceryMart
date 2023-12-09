@@ -12,10 +12,11 @@
 
 .prod-preview {
     padding: 0 30px;
+    overflow: hidden;
 
     &__list {
         display: flex;
-        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
     }
 
     &__item {
