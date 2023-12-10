@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,13 +49,13 @@
                 <div class="checkout-container">
                     <ul class="breadcrumbs checkout-page__breadcrumbs">
                         <li>
-                            <a href="#!" class="breadcrumbs__link"
+                            <a href="./" class="breadcrumbs__link"
                                 >Home
                                 <img src="./assets/icons/arrow-right.svg" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="#!" class="breadcrumbs__link">
+                            <a href="./checkout.html" class="breadcrumbs__link">
                                 Checkout
                                 <img src="./assets/icons/arrow-right.svg" alt="" />
                             </a>
@@ -82,17 +82,22 @@
                                             <h2 class="user-address__title">Shipping address</h2>
                                             <p class="user-address__desc">Where should we deliver your order?</p>
                                         </div>
-                                        <button class="user-address__btn btn btn--primary btn--rounded">
+                                        <button class="user-address__btn btn btn--primary btn--rounded btn--small">
                                             <img src="./assets/icons/plus.svg" alt="" />
                                             Add a new address
                                         </button>
                                     </div>
 
                                     <div class="user-address__list">
+                                        <!-- Empty message -->
+                                        <!-- <p class="user-address__message">Not address yet. <a href="#!" class="user-address__link"> Add a new address</a></p> -->
+
                                         <article class="address-card">
                                             <div class="address-card__left">
                                                 <div class="address-card__choose">
-                                                    <!-- Custom checkbox -->
+                                                    <label class="address-card__checkbox">
+                                                        <input type="checkbox" name="" class="address-card__checkbox-input" checked />
+                                                    </label>
                                                 </div>
                                                 <div class="address-card__info">
                                                     <h3 class="address-card__title">Imran Khan</h3>
@@ -105,7 +110,7 @@
                                             </div>
                                             <div class="address-card__right">
                                                 <div class="address-card__ctrl">
-                                                    <button class="address-card__ctrl-btn"><img src="./assets/icons/edit.svg" alt="" />Edit</button>
+                                                    <button class="address-card__ctrl-btn"><img src="./assets/icons/edit.svg" alt="" class="icon" />Edit</button>
                                                 </div>
                                             </div>
                                         </article>
@@ -113,7 +118,9 @@
                                         <article class="address-card">
                                             <div class="address-card__left">
                                                 <div class="address-card__choose">
-                                                    <!-- Custom checkbox -->
+                                                    <label class="address-card__checkbox">
+                                                        <input type="checkbox" name="" class="address-card__checkbox-input" />
+                                                    </label>
                                                 </div>
                                                 <div class="address-card__info">
                                                     <h3 class="address-card__title">Imran Khan</h3>
@@ -126,13 +133,15 @@
                                             </div>
                                             <div class="address-card__right">
                                                 <div class="address-card__ctrl">
-                                                    <button class="address-card__ctrl-btn"><img src="./assets/icons/edit.svg" alt="" />Edit</button>
+                                                    <button class="address-card__ctrl-btn"><img src="./assets/icons/edit.svg" alt="" class="icon" />Edit</button>
                                                 </div>
                                             </div>
                                         </article>
                                     </div>
                                 </div>
                                 <!-- End Checkout Address -->
+
+                                <div class="cart-info__separate"></div>
 
                                 <h2 class="cart-info__sub-heading">Items details</h2>
 
