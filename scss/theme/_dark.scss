@@ -85,7 +85,7 @@ html.dark {
     --search-bar-bg: #171c28;
 
     // Review card
-    --review-card-bg: #171c28;
+    --review-card-bg: #d8d8db;
 
     // Text content
     --text-content-hr-bg: #3e4043;
@@ -96,4 +96,8 @@ html.dark {
     --checkout-cart-info-shadow: rgba(23, 28, 40, 0.2);
     --checkout-border-color: #292e39;
     --checkout-gift-shadow: rgba(23, 28, 40, 0.2);
+
+    // Dialog
+    --dialog-bg: #2f3441;
+    --dialog-shadow: rgba(23, 28, 40, 0.4);
 }

@@ -56,6 +56,7 @@
     font-size: 1.8rem;
     font-weight: 500;
     user-select: none;
+    white-space: nowrap;
 
     transition: opacity 0.2s;
 
@@ -65,8 +66,12 @@
         }
     }
 
+    &--small {
+        height: 40px;
+        padding: 0 16px;
+    }
+
     &--text {
-        color: #9e9da8;
         font-size: 1.5rem;
         font-weight: 400;
         background: transparent;
