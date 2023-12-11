@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,19 +48,19 @@
                 <!-- Start Breadcrumbs -->
                 <div class="checkout-container">
                     <ul class="breadcrumbs checkout-page__breadcrumbs">
-                        <li>
+                        <li class="form__option">
                             <a href="./" class="breadcrumbs__link"
                                 >Home
                                 <img src="./assets/icons/arrow-right.svg" alt="" />
                             </a>
                         </li>
-                        <li>
+                        <li class="form__option">
                             <a href="./checkout.html" class="breadcrumbs__link">
                                 Checkout
                                 <img src="./assets/icons/arrow-right.svg" alt="" />
                             </a>
                         </li>
-                        <li>
+                        <li class="form__option">
                             <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">Shipping</a>
                         </li>
                     </ul>
@@ -379,12 +379,7 @@
                                 <p class="form__error">Please enter a phone of at least 10 characters.</p>
                             </div>
                         </div>
-                        <div class="form__group">
-                            <label for="city" class="form__label form__label--small">City/District/Town</label>
-                            <div class="form__text-input form__text-input--small">
-                                <input type="text" name="city" id="city" placeholder="City/District/Town" class="form__input" />
-                            </div>
-                        </div>
+
                         <div class="form__group">
                             <label for="address" class="form__label form__label--small">Address</label>
                             <div class="form__text-area">
@@ -392,6 +387,51 @@
                                 <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
                             </div>
                             <p class="form__error">Address not empty.</p>
+                        </div>
+                        <div class="form__group">
+                            <label for="city" class="form__label form__label--small">City/District/Town</label>
+                            <div class="form__text-input form__text-input--small">
+                                <input type="text" name="city" id="city" placeholder="City/District/Town" class="form__input js-toggle" toggle-target="#city-dialog" />
+                                <div class="form__select-dialog hide" id="city-dialog">
+                                    <div class="form__search">
+                                        <input type="text" name="" id="" class="form__search-input" placeholder="Search..." />
+                                        <img src="./assets/icons/search.svg" alt="" class="icon form__search-icon" />
+                                    </div>
+                                    <ul class="form__options-list">
+                                        <li class="form__option">Ha Noi</li>
+                                        <li class="form__option form__option--current">Ho Chi Minh</li>
+                                        <li class="form__option">Da Nang</li>
+                                        <li class="form__option">Hai Phong</li>
+                                        <li class="form__option">Quang Ninh</li>
+                                        <li class="form__option">Hue</li>
+                                        <li class="form__option">Phu Tho</li>
+                                        <li class="form__option">Ninh Binh</li>
+                                        <li class="form__option">Hung Yen</li>
+                                        <li class="form__option">Thai Nguyen</li>
+                                        <li class="form__option">Hoa Binh</li>
+                                        <li class="form__option">Yen Bai</li>
+                                        <li class="form__option">Lao Cai</li>
+                                        <li class="form__option">Lang Son</li>
+                                        <li class="form__option">Quang Nam</li>
+                                        <li class="form__option">Quang Binh</li>
+                                        <li class="form__option">Thai Binh</li>
+                                        <li class="form__option">Nam Dinh</li>
+                                        <li class="form__option">Vinh Phuc</li>
+                                        <li class="form__option">Bac Ninh</li>
+                                        <li class="form__option">Thai Nguyen</li>
+                                        <li class="form__option">Hoa Binh</li>
+                                        <li class="form__option">Yen Bai</li>
+                                        <li class="form__option">Lao Cai</li>
+                                        <li class="form__option">Lang Son</li>
+                                        <li class="form__option">Quang Nam</li>
+                                        <li class="form__option">Quang Binh</li>
+                                        <li class="form__option">Thai Binh</li>
+                                        <li class="form__option">Nam Dinh</li>
+                                        <li class="form__option">Vinh Phuc</li>
+                                        <li class="form__option">Bac Ninh</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="form__group form__group--inline">
                             <label class="form__checkbox">
