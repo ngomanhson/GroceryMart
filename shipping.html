@@ -345,7 +345,7 @@
         <div class="modal modal--small hide" id="delete-confirm">
             <!-- <button class="modal__close js-toggle" toggle-target="#delete-confirm">&times;</button> -->
             <div class="modal__content">
-                <p class="modal__text">Do you want remove this item from shopping cart?</p>
+                <p class="modal__text">Do you want to remove this item from shopping cart?</p>
                 <div class="modal__bottom">
                     <button class="btn btn--small btn--outline modal__btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
                     <button class="btn btn--small btn--primary btn--danger modal__btn btn--no-margin js-toggle" toggle-target="#delete-confirm">Delete</button>
@@ -391,7 +391,7 @@
                         <div class="form__group">
                             <label for="city" class="form__label form__label--small">City/District/Town</label>
                             <div class="form__text-input form__text-input--small">
-                                <input type="text" name="city" id="city" placeholder="City/District/Town" class="form__input js-toggle" toggle-target="#city-dialog" />
+                                <input type="text" name="city" id="city" placeholder="City/District/Town" class="form__input js-toggle" toggle-target="#city-dialog" readonly />
                                 <!-- Start select dialog -->
                                 <div class="form__select-dialog hide" id="city-dialog">
                                     <h2 class="form__dialog-heading d-none d-sm-block">City/District/Town</h2>
@@ -404,12 +404,12 @@
                                     </div>
                                     <ul class="form__options-list">
                                         <li class="form__option">Ha Noi</li>
-                                        <li class="form__option form__option--current">Ho Chi Minh</li>
+                                        <li class="form__option">Ho Chi Minh</li>
                                         <li class="form__option">Da Nang</li>
                                         <li class="form__option">Hai Phong</li>
                                         <li class="form__option">Quang Ninh</li>
                                         <li class="form__option">Hue</li>
-                                        <li class="form__option">Phu Tho</li>
+                                        <li class="form__option form__option--current">Phu Tho</li>
                                         <li class="form__option">Ninh Binh</li>
                                         <li class="form__option">Hung Yen</li>
                                         <li class="form__option">Thai Nguyen</li>
