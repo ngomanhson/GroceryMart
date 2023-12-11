@@ -3835,10 +3835,20 @@ html.dark {
     padding: 16px;
   }
 }
+.cart-info__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .cart-info__heading {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 141.667%;
+}
+.cart-info__heading--lv2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 145.455%;
 }
 .cart-info__sub-heading {
   margin: 30px 0;
@@ -3899,6 +3909,26 @@ html.dark {
 }
 .cart-info__next-btn {
   margin-top: 30px;
+}
+.cart-info__edit-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  line-height: 144.444%;
+}
+.cart-info__checkbox-input {
+  appearance: none;
+  cursor: pointer;
+}
+.cart-info__checkbox-input::before {
+  content: url("../icons/checkbox-uncheck.svg");
+}
+.cart-info__checkbox-input:not(:checked)::before {
+  filter: var(--icon-color);
+}
+.cart-info__checkbox-input:checked::before {
+  content: url("../icons/checkbox-checked.svg");
 }
 
 .cart-info + .cart-info {
@@ -4149,25 +4179,58 @@ html.dark {
   align-items: flex-end;
   height: 100%;
 }
-.address-card__ctrl-btn {
+
+.payment-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.8rem;
-  line-height: 144.444%;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #f6f6f6;
 }
-.address-card__checkbox-input {
-  appearance: none;
+.payment-item--pointer {
   cursor: pointer;
 }
-.address-card__checkbox-input::before {
-  content: url("../icons/checkbox-uncheck.svg");
+.payment-item__thumb {
+  width: 70px;
+  height: 54px;
+  object-fit: cover;
 }
-.address-card__checkbox-input:not(:checked)::before {
-  filter: var(--icon-color);
+.payment-item__content {
+  flex: 1;
 }
-.address-card__checkbox-input:checked::before {
-  content: url("../icons/checkbox-checked.svg");
+.payment-item__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 144.444%;
+}
+.payment-item__desc, .payment-item__detail {
+  font-size: 1.5rem;
+  line-height: 146.667%;
+}
+.payment-item__desc {
+  margin-top: 4px;
+}
+.payment-item__detail {
+  margin-right: -8px;
+  padding: 8px;
+  color: #0071dc;
+}
+.payment-item__checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 14px;
+}
+.payment-item__checkbox-input:checked + .payment-item__cost {
+  color: inherit;
+}
+.payment-item__cost {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 144.444%;
+  color: #9e9da8;
 }
 
 /*# sourceMappingURL=main.css.map */
