@@ -95,6 +95,14 @@
             font-size: 2.2rem;
             font-weight: 700;
         }
+
+        &-md--block {
+            @include abstracts.screen(md) {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                gap: 30px;
+            }
+        }
     }
 
     &__separate {
@@ -167,6 +175,12 @@
     &__check-all {
         margin: 30px 0;
     }
+
+    &__checkout-all {
+        @include abstracts.screen(md) {
+            width: 100%;
+        }
+    }
 }
 
 .cart-info + .cart-info {
@@ -186,6 +200,10 @@
         &:last-child {
             border: none;
         }
+    }
+
+    &-no-gap {
+        gap: 0;
     }
 
     &__thumb {
@@ -258,6 +276,11 @@
         display: flex;
         align-items: center;
         gap: 30px;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__ctrl {
@@ -267,6 +290,10 @@
 
         margin-top: auto;
         min-height: 44px;
+
+        @include abstracts.screen(sm) {
+            gap: 10px;
+        }
 
         &--md-block {
             @include abstracts.screen(md) {
@@ -332,6 +359,10 @@
 
     &__checkout-btn {
         margin-top: auto;
+
+        @include abstracts.screen(md) {
+            max-width: 200px;
+        }
     }
 }
 
