@@ -259,13 +259,14 @@
         </script>
         <!-- End Footer -->
 
-        <!--  Modal -->
-        <div class="modal hide" id="delete-confirm">
+        <!--  Modal: confirm remove shopping cart item -->
+        <div class="modal modal--small hide" id="delete-confirm">
+            <!-- <button class="modal__close js-toggle" toggle-target="#delete-confirm">&times;</button> -->
             <div class="modal__content">
-                <div class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
+                <p class="modal__text">Do you want remove this item from shopping cart?</p>
                 <div class="modal__bottom">
-                    <button class="btn btn--small btn--text modal__btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
-                    <button class="btn btn--small btn--primary modal__btn btn--no-margin js-toggle" toggle-target="#delete-confirm">Confirm</button>
+                    <button class="btn btn--small btn--outline modal__btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+                    <button class="btn btn--small btn--primary btn--danger modal__btn btn--no-margin js-toggle" toggle-target="#delete-confirm">Delete</button>
                 </div>
             </div>
             <div class="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>

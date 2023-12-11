@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,19 +48,19 @@
                 <!-- Start Breadcrumbs -->
                 <div class="checkout-container">
                     <ul class="breadcrumbs checkout-page__breadcrumbs">
-                        <li class="form__option">
+                        <li>
                             <a href="./" class="breadcrumbs__link"
                                 >Home
                                 <img src="./assets/icons/arrow-right.svg" alt="" />
                             </a>
                         </li>
-                        <li class="form__option">
+                        <li>
                             <a href="./checkout.html" class="breadcrumbs__link">
                                 Checkout
                                 <img src="./assets/icons/arrow-right.svg" alt="" />
                             </a>
                         </li>
-                        <li class="form__option">
+                        <li>
                             <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">Shipping</a>
                         </li>
                     </ul>
@@ -311,7 +311,7 @@
                                     <span>Estimated Total</span>
                                     <span>$201.65</span>
                                 </div>
-                                <a href="#!" class="btn btn--primary btn--rounded cart-info__next-btn">Continue to checkout</a>
+                                <a href="./payment.html" class="btn btn--primary btn--rounded cart-info__next-btn">Continue to checkout</a>
                             </div>
                             <div class="cart-info">
                                 <a href="#!">
@@ -345,10 +345,10 @@
         <div class="modal modal--small hide" id="delete-confirm">
             <!-- <button class="modal__close js-toggle" toggle-target="#delete-confirm">&times;</button> -->
             <div class="modal__content">
-                <div class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
+                <p class="modal__text">Do you want remove this item from shopping cart?</p>
                 <div class="modal__bottom">
-                    <button class="btn btn--small btn--text modal__btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
-                    <button class="btn btn--small btn--primary modal__btn btn--no-margin js-toggle" toggle-target="#delete-confirm">Confirm</button>
+                    <button class="btn btn--small btn--outline modal__btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+                    <button class="btn btn--small btn--primary btn--danger modal__btn btn--no-margin js-toggle" toggle-target="#delete-confirm">Delete</button>
                 </div>
             </div>
             <div class="modal__overlay js-toggle" toggle-target="#delete-confirm"></div>
@@ -392,8 +392,12 @@
                             <label for="city" class="form__label form__label--small">City/District/Town</label>
                             <div class="form__text-input form__text-input--small">
                                 <input type="text" name="city" id="city" placeholder="City/District/Town" class="form__input js-toggle" toggle-target="#city-dialog" />
+                                <!-- Start select dialog -->
                                 <div class="form__select-dialog hide" id="city-dialog">
-                                    <button class="form__close-dialog d-none d-sm-block js-toggle" toggle-target="#add-new-address">&times;</button>
+                                    <h2 class="form__dialog-heading d-none d-sm-block">City/District/Town</h2>
+                                    <button class="form__close-dialog d-none d-sm-block js-toggle" toggle-target="#add-new-address">
+                                        <img src="./assets/icons/arrow-left.svg" alt="" class="icon" />
+                                    </button>
                                     <div class="form__search">
                                         <input type="text" name="" id="" class="form__search-input" placeholder="Search..." />
                                         <img src="./assets/icons/search.svg" alt="" class="icon form__search-icon" />
@@ -432,6 +436,7 @@
                                         <li class="form__option">Bac Ninh</li>
                                     </ul>
                                 </div>
+                                <!-- End select dialog -->
                             </div>
                         </div>
                         <div class="form__group form__group--inline">
@@ -443,7 +448,7 @@
                     </div>
                     <div class="modal__bottom">
                         <button class="btn btn--small btn--text modal__btn js-toggle" toggle-target="#add-new-address">Cancel</button>
-                        <button class="btn btn--small btn--primary modal__btn btn--no-margin js-toggle" toggle-target="#add-new-address">Create</button>
+                        <button class="btn btn--small btn--primary modal__btn btn--no-margin">Create</button>
                     </div>
                 </form>
             </div>
