@@ -56,12 +56,16 @@ html {
 
     // Auth
     --auth-content-bg: #fff;
+
     @include abstracts.screen(md) {
         --auth-intro-bg: #fff;
     }
 
     // Forms
-    --form-placeholder-color: #9e9da8;
+    --form-placeholder-color: #d2d1d6;
+    --form-select-dialog-shadow: rgba($color: #000, $alpha: 0.15);
+    --form-select-dialog-bg: #fff;
+    --form-option-hover-bg: #ebebeb;
 
     // Product detail
     --product-detail-bg: #fff;
