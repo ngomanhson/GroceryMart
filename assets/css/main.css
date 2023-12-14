@@ -149,7 +149,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: Gordita, sans-serif;
+  font-family: Lato, sans-serif;
   color: var(--text-color);
   background: var(--body-bg);
 }
@@ -1453,7 +1453,7 @@ html.dark {
   --footer-text-color: #9e9da6;
   --top-act-group-gb-color: #292e39;
   --top-act-group-shadow: rgba(0, 0, 0, 0.2);
-  --top-act-group-separate: #ededf6;
+  --top-act-group-separate: #9e9da6;
   --header-act-dropdown-bg: #2f3441;
   --header-act-dropdown-shadow: rgba(23, 28, 40, 0.4);
   --header-act-dropdown-border-color: #171c28;
@@ -1543,7 +1543,7 @@ html.dark {
 
 .top-bar {
   position: relative;
-  padding: 30px 0;
+  padding: 20px 0;
   z-index: 1;
 }
 @media (max-width: 991.98px) {
@@ -2312,7 +2312,7 @@ html.dark {
   position: relative;
   flex-shrink: 0;
   width: 100%;
-  padding-top: 34%;
+  padding-top: 26%;
 }
 @media (max-width: 767.98px) {
   .slideshow__item {
@@ -2384,7 +2384,7 @@ html.dark {
   display: flex;
   gap: 20px;
   height: 100%;
-  padding: 20px 26px;
+  padding: 20px;
   border-radius: 16px;
   background: var(--cate-item-bg);
 }
@@ -2400,8 +2400,8 @@ html.dark {
 }
 .cate-item__thumb {
   display: block;
-  width: 116px;
-  height: 116px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   background: var(--cate-item-thumb-bg);
   border-radius: 8px;
@@ -2829,7 +2829,7 @@ html.dark {
 }
 .form__text-input {
   position: relative;
-  height: 50px;
+  height: 48px;
 }
 .form__text-input--small {
   height: 42px;
